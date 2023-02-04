@@ -1,4 +1,4 @@
-FROM golang:latest as build
+FROM docker.io/library/golang:latest as build
 WORKDIR /argocon
 COPY . /argocon
 COPY ui /argocon/ui
