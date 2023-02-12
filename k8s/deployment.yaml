@@ -4,6 +4,7 @@ metadata:
   labels:
     app: argocon22-app
   name: argocon22-app
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -15,7 +16,7 @@ spec:
         app: argocon22-app
     spec:
       containers:
-        - image: quay.io/rcarrata/argocon22-app:latest
+        - image: ghcr.io/strato190/argocon22-app:v1
           imagePullPolicy: Always
           name: argocon22-app
           ports:
